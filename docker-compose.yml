@@ -1,0 +1,10 @@
+version: '3.1'
+services:
+  mongo:
+    container_name: spring-reactive
+    image: mongo:4.2.0-rc2-bionic
+    ports:
+      - 27017:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example 
